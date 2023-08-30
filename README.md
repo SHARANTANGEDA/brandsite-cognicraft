@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://getdoks.org/">
-    <img alt="Doks" src="https://doks.netlify.app/logo-doks.svg" width="60">
+  <a href="https://cognicraft.tech/">
+    <img alt="Doks" src="https://cognicraft.tech/logo-doks.svg" width="60">
   </a>
 </p>
 
@@ -35,7 +35,7 @@
 
 ## Demo
 
-- [doks-child-theme.netlify.app](https://doks-child-theme.netlify.app/)
+- [cognicraft.tech](https://cognicraft.tech/)
 
 ## Why Doks?
 
