@@ -1,1 +1,93 @@
 /** Custom styles */
+$blue-start: #0052BF;
+$blue-end: #0088CF;
+$dark-mode-text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+
+.title-glossy {
+  background: linear-gradient(45deg, $blue-start, $blue-end);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.2em 0;
+}
+[data-theme='dark'] {
+  .title-glossy {
+    // Adjust the gradient or other properties for dark mode
+    text-shadow: $dark-mode-text-shadow;
+  }
+}
+
+$btn-primary-color: #0056B3;  // A shade of blue
+$btn-hover: #004799;         // A darker shade for hover effect
+
+.btn-primary {
+  background-color: $btn-primary-color;
+  border: none;  // remove default borders
+  color: #FFFFFF;  // white text color
+  transition: background-color 0.3s ease;  // transition effect for smooth color change on hover
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover;  // darker blue on hover/focus
+  }
+}
+[data-theme='dark'] {
+  .btn-primary {
+    background-color: darken($btn-primary-color, 10%);
+    &:hover,
+    &:focus {
+      background-color: darken($btn-hover, 10%);
+    }
+  }
+}
+
+
+.github-btn {
+  padding: 10px 20px;
+  //background-color: #f5f5f5; // Light gray background
+  color: #333; // Dark text
+  border: 1px solid #e1e1e1; // Border color
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #ecebeb; // Darker gray background on hover
+    color: $btn-hover; // White text on hover
+  }
+
+  .github-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    fill: currentColor; // This will make the SVG icon take the current text color
+  }
+}
+
+.xpuls-btn {
+  background: linear-gradient(145deg, #007BFF, #0056b3);
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.xpuls-btn span {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.xpuls-btn:hover {
+  background: linear-gradient(-145deg, #007BFF, #0056b3);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
