@@ -32,15 +32,6 @@ $btn-hover: #004799;         // A darker shade for hover effect
     background-color: $btn-hover;  // darker blue on hover/focus
   }
 }
-[data-theme='dark'] {
-  .btn-primary {
-    background-color: darken($btn-primary-color, 10%);
-    &:hover,
-    &:focus {
-      background-color: darken($btn-hover, 10%);
-    }
-  }
-}
 
 
 .github-btn {
@@ -50,19 +41,29 @@ $btn-hover: #004799;         // A darker shade for hover effect
   border: 1px solid #e1e1e1; // Border color
   border-radius: 4px;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  &:hover {
-    background-color: #ecebeb; // Darker gray background on hover
-    color: $btn-hover; // White text on hover
-  }
+.github-btn2 span {
+  opacity: 0.8;
+  font-weight: normal;
+}
+.github-btn2 img {
+  max-width: 30px;
+}
 
-  .github-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    fill: currentColor; // This will make the SVG icon take the current text color
-  }
+.github-btn2:hover {
+  background: linear-gradient(-145deg, #007BFF, #0056b3);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.github-icon {
+  width: 20px;
+  max-width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  margin-right: 10px;
+  fill: currentColor; // This will make the SVG icon take the current text color
 }
 
 .xpuls-btn {

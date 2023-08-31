@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="section container-fluid mt-n6 pb-3 d-flex justify-content-center align-items-start" style="height: 55vh">
+<section class="section container-fluid mt-n6 pb-3 d-flex justify-content-center align-items-start">
   <div class="row justify-content-center">
     <div class="col-lg-12 text-center">
 <!--      <h1 class="mt-0" style="background: linear-gradient(45deg, #0052BF, #0088CF); -webkit-background-clip: text; color: transparent; font-weight: bold; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); padding: 0.2em 0;">{{ .Title }}</h1>-->
@@ -11,9 +11,12 @@
       <p class="lead">Instrumenting the best tech practices to elevate efficiency, productivity and ROI ensuring businesses stay ahead.</p>
       {{ $githubIcon := resources.Get "images/github-light.svg" }}
 
-      <a href="https://github.com/xpuls-labs" class="github-btn btn btn-lg px-4 mb-2" role="button">
-        <img src="{{ $githubIcon.RelPermalink }}" alt="GitHub Logo" class="github-icon">
-        <span>Open Source</span>
+      <a href="https://github.com/xpuls-labs" style="border-radius: 25px;border: 1px solid #e1e1e1;" class="btn btn-lg github-btn2 ">
+        <div class="d-flex align-items-center">
+          <img style="max-width: 24px; margin-right: 10px;" src="{{ $githubIcon.RelPermalink }}" alt="GitHub Logo" class="">
+          <span> ⭐ Open Source</span>
+        </div>
+
       </a>
       <button class="xpuls-btn">xpuls.ai <span>(Coming Soon)</span></button>
     </div>
