@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://cognicraft.tech/blog</id>
+    <title>Cognicraft Tech Blog</title>
+    <updated>2023-11-24T05:53:38.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://cognicraft.tech/blog"/>
+    <subtitle>Cognicraft Tech Blog</subtitle>
+    <icon>https://cognicraft.tech/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Blogs]]></title>
+        <id>https://cognicraft.tech/blog/index</id>
+        <link href="https://cognicraft.tech/blog/index"/>
+        <updated>2023-11-24T05:53:38.000Z</updated>
+    </entry>
+</feed>

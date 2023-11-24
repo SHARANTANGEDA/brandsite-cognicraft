@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcognicraft_tech_platform=self.webpackChunkcognicraft_tech_platform||[]).push([[654],{6898:c=>{c.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"curated-tools"}')}}]);

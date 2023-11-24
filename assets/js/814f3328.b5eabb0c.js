@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcognicraft_tech_platform=self.webpackChunkcognicraft_tech_platform||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Blogs","permalink":"/blog/index","unlisted":false}]}')}}]);
