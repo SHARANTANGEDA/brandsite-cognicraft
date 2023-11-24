@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Databricks",
+    "description": "Databricks is a Lakehouse Platform",
+    "isOss": false,
+    "github": "https://github.com",
+    "website": "https://google.com",
+    "clouds": [
+      "azure",
+      "gcp",
+      "aws"
+    ],
+    "keywords": [],
+    "category": "databricks"
+  }
+]

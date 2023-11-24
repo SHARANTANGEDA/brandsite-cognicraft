@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --ifm-navbar-height: 120px
+}
+/* src/css/custom.css */
+a {
+  text-decoration: none; /* Removes underlining */
+}
+
+a:hover, a:focus {
+  text-decoration: none; /* Removes underlining on hover/focus */
+  /* Add any hover effects if needed */
+}

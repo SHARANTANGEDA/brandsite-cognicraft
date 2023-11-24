@@ -1,0 +1,84 @@
+/* MyCalendlyBanner.css */
+
+.calendly-banner-container {
+    background-color: #4a90e2; /* Example background color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendly-banner-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.calendly-banner-content p {
+    margin-bottom: 15px;
+}
+
+.calendly-link {
+    background-color: #fff;
+    color: #4a90e2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.calendly-link:hover {
+    background-color: #3e7cbf;
+    color: #fff;
+}
+
+.social-banner {
+    background-color: #4a90e2; /* Example primary color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-banner2 {
+    background-color: #d17e02; /* Warm golden color */
+    color: white; /* Darker text for contrast */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.banner-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon {
+    vertical-align: middle;
+}

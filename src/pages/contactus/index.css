@@ -1,0 +1,32 @@
+.founder-message {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-left: 4px solid #4a90e2;
+    margin: 20px 0;
+    position: relative;
+    font-style: italic;
+}
+
+.quote-icon {
+    color: #4a90e2;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #333;
+    margin: 0;
+}
+
+blockquote footer {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+cite {
+    font-style: normal;
+    opacity: 0.7;
+}
