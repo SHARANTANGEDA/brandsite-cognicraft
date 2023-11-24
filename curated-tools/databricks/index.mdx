@@ -1,144 +1,65 @@
 ---
-title: 'Databricks'
+title: "Databricks"
+Description: "Understanding Databricks: Features, Cloud Support, Pricing, and Architecture"
 ---
 
-# Markdown Features
+# Databricks Overview
 
-Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+Databricks is a platform for big data analytics and artificial intelligence (AI). It integrates with various cloud services to provide a unified analytics platform.
 
-## Front Matter
+## What Does Databricks Do?
 
-Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
+Databricks offers a suite of features for data engineering, data science, and machine learning. Key functionalities include:
 
-```text title="my-doc.md"
-// highlight-start
+- **Data Engineering**: Efficient processing of big data using optimized Apache Spark clusters.
+- **Data Science and Machine Learning**: Collaborative notebooks with support for multiple languages (Python, R, Scala, SQL).
+- **Machine Learning Operations (MLOps)**: Tools for model training, deployment, and management.
+- **SQL Analytics**: Interactive analytics with a SQL-native workspace.
+
+## Features of Databricks
+
+### 1. Unified Data Analytics Platform
+- **Description**: A single platform for data processing, analytics, and machine learning.
+- **More Information**: [Unified Data Analytics Platform](https://databricks.com/unified-data-analytics)
+
+### 2. Delta Lake
+- **Description**: Storage layer that brings reliability to Data Lakes.
+- **More Information**: [Delta Lake on Databricks](https://databricks.com/delta-lake)
+
+[... additional features ...]
+
+## Architecture Diagrams
+
+For an in-depth understanding of Databricks' architecture, refer to the following links:
+
+- [Databricks Architecture Overview](https://databricks.com/architecture-overview)
+- [Delta Lake Architecture](https://databricks.com/delta-lake-architecture)
+
+## Supported Clouds
+
+Databricks is available on multiple cloud platforms:
+
+- **AWS (Amazon Web Services)**
+- **Azure (Microsoft Azure)**
+- **GCP (Google Cloud Platform)**
+
+Each cloud integration offers specific features and optimizations.
+
+## Pricing
+
+Databricks' pricing model varies based on cloud provider and the selected service tier. Key aspects include:
+
+- **Databricks Unit (DBU)**: A unit of processing capability per hour.
+- **Pricing Tiers**: Different pricing for data engineering, data analytics, and machine learning workloads.
+- **Cloud-Specific Pricing**: Costs may vary between AWS, Azure, and GCP.
+
+For detailed pricing information, refer to the [Databricks Pricing Page](https://databricks.com/pricing).
+
+## Learn More
+
+For more detailed information about Databricks and its capabilities, visit the [official Databricks website](https://databricks.com).
+
 ---
-id: my-doc-id
-title: My document title
-description: My document description
-slug: /my-custom-url
----
-// highlight-end
 
-## Markdown heading
+This document provides an overview of Databricks as a product. For comprehensive and updated information, always refer to the official documentation and resources.
 
-Markdown text with [links](./hello.md)
-```
-
-## Links
-
-Regular Markdown links are supported, using url paths or relative file paths.
-
-```md
-```
-
-```md
-```
-
-
-## Images
-
-Regular Markdown images are supported.
-
-You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`):
-
-```md
-```
-
-
-You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them:
-
-```md
-```
-
-## Code Blocks
-
-Markdown code blocks are supported with Syntax highlighting.
-
-    ```jsx title="src/components/HelloDocusaurus.js"
-    function HelloDocusaurus() {
-        return (
-            <h1>Hello, Docusaurus!</h1>
-        )
-    }
-    ```
-
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
-}
-```
-
-## Admonitions
-
-Docusaurus has a special syntax to create admonitions and callouts:
-
-    :::tip My tip
-
-    Use this awesome feature option
-
-    :::
-
-    :::danger Take care
-
-    This action is dangerous
-
-    :::
-
-:::tip My tip
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-
-## MDX and React Components
-
-[MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**:
-
-```jsx
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`)
-    }}>
-    {children}
-  </span>
-);
-
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
-```
-
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`);
-    }}>
-    {children}
-  </span>
-);
-
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !

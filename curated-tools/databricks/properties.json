@@ -1,9 +1,10 @@
 {
+	"id": "databricks",
 	"title": "Databricks",
-	"description": "Databricks is a Lakehouse Platform",
+	"description": "A platform for big data analytics and artificial intelligence (AI). It integrates with various cloud services to provide a unified analytics platform.",
 	"isOss": false,
-	"github": "https://github.com",
-	"website": "https://google.com",
+	"github": "https://github.com/databrickslabs",
+	"website": "https://www.databricks.com/",
 	"clouds": ["azure", "gcp", "aws"],
 	"keywords": [],
 	"category": "Data Platform"

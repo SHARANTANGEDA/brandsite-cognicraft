@@ -63,7 +63,7 @@ const config = {
         routeBasePath: 'curated-tools',
         breadcrumbs: true,
         sidebarCollapsed: true,
-        // sidebarPath: require.resolve('./sidebars.js'),
+        sidebarPath: require.resolve('./curatedToolsSidebar.js'),
         // includeCurrentVersion: true, // Ensure this is set to true
       },
     ],

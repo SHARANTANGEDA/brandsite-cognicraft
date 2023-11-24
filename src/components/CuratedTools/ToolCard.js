@@ -1,11 +1,12 @@
 import {BsGithub} from "react-icons/bs";
 import {IoMdOpen} from "react-icons/io";
+import Link from "@docusaurus/Link";
 
 export const ToolCard = ({ tool }) => {
     return (
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white m-4 dark:bg-black max-w-1/4">
             <div className="flex justify-center">
-                <img  src="/tools/databricks.svg" height={240} alt="Logo" />
+                <img  src={`/tools/${tool.id}.svg`} height={240} alt="Logo" />
             </div>
             <div className="px-6 py-4">
                 <div className="flex flex-row justify-between">
@@ -30,23 +31,34 @@ export const ToolCard = ({ tool }) => {
             </div>
             <div className="mt-1 flex items-center justify-center">
                 <div className="flex items-center justify-center gap-x-6 mb-2 mr-3">
-                    {tool.isOss ? <a className=" ml-2 rounded-md ring-2 ring-black px-2.5 py-1.5 font-semibold
-                     text-black dark:text-white dark:ring-white flex flex-row justify-between" href={tool.github} target="_blank">
-                        <BsGithub className="mr-2 text-black dark:text-white mt-0.5" size={20} /> Source
-                    </a>: <a className=" ml-2 rounded-md bg-blue-700 px-2.5 py-1.5 font-semibold
-                     text-white flex flex-row justify-between" href={tool.website}
-                             target="_blank"> Visit
-                        <IoMdOpen className="text-white ml-2 mt-1" size={20} />
-                    </a>}
-
+                    {tool.isOss ? (
+                        <a
+                            className="ml-2 rounded-md border border-blue-500 px-2.5 py-1.5 font-semibold text-blue-700 hover:bg-blue-500 hover:text-white transition-colors duration-300 dark:border-white dark:text-white flex flex-row justify-between"
+                            href={tool.github}
+                            target="_blank"
+                        >
+                            <BsGithub className="mr-2 text-blue-700 dark:text-white mt-0.5" size={20} /> Source
+                        </a>
+                    ) : (
+                        <a
+                            className="ml-2 rounded-md border border-blue-500 px-2.5 py-1.5 font-semibold text-blue-700 hover:bg-blue-500 hover:text-white transition-colors duration-300 dark:border-white dark:text-white flex flex-row justify-between"
+                            href={tool.website}
+                            target="_blank"
+                        >
+                            Visit <IoMdOpen className="text-blue-700 dark:text-white ml-2 mt-1" size={20} />
+                        </a>
+                    )}
                 </div>
                 <div className="flex items-center justify-center gap-x-6 mb-2 mr-3">
-                <a href="#" className="text-sm rounded-md px-2.5 py-1.5 font-semibold leading-6
-                text-blue-700 dark:text-blue-400">
-                    Learn more <span aria-hidden="true">→</span>
-                </a>
+                    <Link
+                        to={`/curated-tools/${tool.id}`}
+                        className="text-sm rounded-md bg-blue-700 px-2.5 py-1.5 font-semibold leading-6 text-white hover:bg-blue-800 transition-colors duration-300"
+                    >
+                        Learn more <span aria-hidden="true">→</span>
+                    </Link>
                 </div>
-                            </div>
+            </div>
+
         </div>
     );
 };
