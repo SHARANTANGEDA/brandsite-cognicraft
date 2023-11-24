@@ -1,4 +1,3 @@
-import {Chip} from "@nextui-org/react";
 import {BsGithub} from "react-icons/bs";
 import {IoMdOpen} from "react-icons/io";
 

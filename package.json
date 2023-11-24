@@ -1,6 +1,6 @@
 {
   "name": "cognicraft-tech-platform",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -22,7 +22,6 @@
     "@headlessui/react": "latest",
     "@heroicons/react": "^2.0.18",
     "@mdx-js/react": "^3.0.0",
-    "@nextui-org/react": "^2.2.9",
     "autoprefixer": "^10.4.16",
     "clsx": "^1.2.1",
     "framer-motion": "^10.16.5",
